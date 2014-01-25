@@ -8,4 +8,3 @@ Author: Dan Ross <ross9885@gmail.com>
 
 require_once( dirname( __FILE__ ) . '/post-types/dynamic-image.php' );
 require_once( dirname( __FILE__ ) . '/taxonomies/dynamic-image-section.php' );
-require_once( dirname( __FILE__ ) . '/taxonomies/dynamic-image-format.php' );
