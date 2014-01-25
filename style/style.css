@@ -1,0 +1,26 @@
+/* Structure */
+
+.dynamicImagesCarousel.active {
+	position: relative;
+	width: 100%;
+}
+
+.dynamicImagesCarousel.active > * {
+	position: absolute;
+	width: 100%
+	top: 0;
+}
+
+/* Transition effect */
+
+.dynamicImagesCarousel.active > :not(:first-child) {
+	opacity: 0;
+}
+
+.dynamicImagesCarousel.active > :first-child {
+	opacity: 1;
+}
+
+.dynamicImagesCarousel.active > * {
+	transition: opacity 3s ease-in-out;
+}
