@@ -1,8 +1,11 @@
 /* Structure */
 
+.dynamicImagesCarousel:not(.active) {
+	display: none;
+}
+
 .dynamicImagesCarousel.active {
 	position: relative;
-	width: 100%;
 }
 
 .dynamicImagesCarousel.active > * {
