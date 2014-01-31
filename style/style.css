@@ -1,29 +1,31 @@
 /* Structure */
 
-.dynamicImagesCarousel:not(.active) {
-	display: none;
-}
-
-.dynamicImagesCarousel.active {
+.dynamicImagesCarousel {
 	position: relative;
 }
 
-.dynamicImagesCarousel.active > * {
+.dynamicImagesCarousel > :not(:first-child) {
 	position: absolute;
-	width: 100%
 	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.dynamicImagesCarousel > :first-child {
+	position: relative;
 }
 
 /* Transition effect */
 
-.dynamicImagesCarousel.active > :not(:first-child) {
+.dynamicImagesCarousel :not( .active ) {
 	opacity: 0;
 }
 
-.dynamicImagesCarousel.active > :first-child {
+.dynamicImagesCarousel .active {
 	opacity: 1;
 }
 
-.dynamicImagesCarousel.active > * {
+.dynamicImagesCarousel > * {
 	transition: opacity 3s ease-in-out;
 }
